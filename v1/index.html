@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homewrork1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Мои мини-игры</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Домашнее задание</h1>
+    <section class="header center">
+        <h1 class="header__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
+        <p class="header__text">
+            Тебе предстоит пройти несколько увлекательных игр.<br>Если готов, нажимай <span class="header__text_bold">«Поехали!»</span> и <span class="header__text_bold">приступай</span>.
+        </p>
+        <button class="header__button">Поехали!</button>
+        <div class="header__scrollbar">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">викторина</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">угадай число</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">переверни текст</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">простая арифметика</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">камень, ножницы, бумага</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">генератор случайных цветов</a></li>
+                </ol>
+            </nav>
+        </div>   
+    </section>
+
+    <section class="about center">
+        <h2 class="about__title">Об играх</h2>
+        <p class="about__text">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
+        <div class="about__content">
+            <article></article>
+        </div>
+    </section>
+
+    <footer class="footer center">
+        <p>Все права защищены.</p>
+    </footer>
 </body>
 
 </html>

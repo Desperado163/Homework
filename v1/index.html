@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Мои мини-игры</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             Тебе предстоит пройти несколько увлекательных игр.<br>
             Если готов, нажимай <span class="header__text-bold">«Поехали!»</span> и <span class="header__text-bold">приступай</span>.
         </p>
-        <button class="header__button">Поехали!</button> 
+        <button class="header__button" onclick="scrollToSection()">Поехали!</button> 
     </section>
 
     <div class="scrollbar">
@@ -34,7 +35,7 @@
         </nav>
     </div>  
 
-    <section class="about center">
+    <section class="about center" id="about">
         <h2 class="about__title">Об играх</h2>
         <p class="about__text">
             В моей коллекции представлено 6 игр на разные темы.<br>

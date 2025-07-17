@@ -118,9 +118,13 @@ li {
             max-width: 378px;
             overflow: hidden;
             height: auto;
-            // grid-column: span 4;
             border-radius: 30px;
             background: #fff;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
             &__img {
                 border-radius: 30px;

@@ -90,6 +90,7 @@ li {
 }
 .about__text {
   margin-top: 24px;
+  margin-bottom: 72px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -97,15 +98,14 @@ li {
   color: #fff;
 }
 .about__content {
-  margin-top: 72px;
   display: grid;
   align-items: start;
   grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
-  gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
-.about__content_end {
-  margin-top: 0;
-  align-items: end;
+.about__content > :nth-child(n+4):nth-child(-n+6) {
+  align-self: end;
 }
 .about__content .game-card {
   max-width: 378px;

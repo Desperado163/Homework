@@ -121,7 +121,7 @@ li {
 .about__content .game-card__img {
   border-radius: 30px;
   height: auto;
-  aspect-ratio: 5/4;
+  aspect-ratio: 5/4.154;
 }
 .about__content .game-card__img_item1 {
   background: url(img/guess_the_number_ico.svg) center top 40px no-repeat, url(img/guess_the_number.png) center no-repeat, #AD61FF;

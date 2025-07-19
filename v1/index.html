@@ -1,14 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homewrork1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Мои мини-игры</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
+    <section class="header center">
+        <h1 class="header__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
+        <p class="header__text">
+            Тебе предстоит пройти несколько увлекательных игр.<br>
+            Если готов, нажимай <span class="header__text-bold">«Поехали!»</span> и <span class="header__text-bold">приступай</span>.
+        </p>
+        <button class="header__button" onclick="scrollToSection()">Поехали!</button> 
+    </section>
 
+    <div class="scrollbar">
+        <nav class="scrollbar__nav" aria-label="breadcrumb">
+            <!-- <ol class="breadcrumb">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">викторина</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">угадай число</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">переверни текст</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">простая арифметика</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">камень, ножницы, бумага</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">генератор случайных цветов</a></li>
+            </ol> -->
+        </nav>
+    </div>  
+
+    <section class="about center" id="about">
+        <h2 class="about__title">Об играх</h2>
+        <p class="about__text">
+            В моей коллекции представлено 6 игр на разные темы.<br>
+            Игры несложные — в них может поиграть каждый.<br>
+            Все игры доступны для пользования.
+        </p>
+        <div class="about__content">
+
+            <a class="game-card" href="#">
+                <div class="game-card__img game-card__img_item1"></div>
+                <div class="game-card__info">
+                    <p class="game-card__number">Игра № 1</p>
+                    <h3 class="game-card__name">Угадай число</h3>
+                </div>
+            </a>
+
+            <a class="game-card" href="#">
+                <div class="game-card__img game-card__img_item2"></div>
+                <div class="game-card__info">
+                    <p class="game-card__number">Игра № 2</p>
+                    <h3 class="game-card__name">Простая<br>арифметика</h3>
+                </div>
+            </a>
+
+            <a class="game-card" href="#">
+                <div class="game-card__img game-card__img_item3"></div>
+                <div class="game-card__info">
+                    <p class="game-card__number">Игра № 3</p>
+                    <h3 class="game-card__name">Переверни текст</h3>
+                </div>
+            </a>
+
+            <a class="game-card" href="#">
+                <div class="game-card__img game-card__img_item4"></div>
+                <div class="game-card__info">
+                    <p class="game-card__number">Игра № 4</p>
+                    <h3 class="game-card__name">Камень,<br>ножницы,<br>бумага</h3>
+                </div>
+            </a>
+
+            <a class="game-card" href="#">
+                <div class="game-card__img game-card__img_item5"></div>
+                <div class="game-card__info">
+                    <p class="game-card__number">Игра № 5</p>
+                    <h3 class="game-card__name">Простая<br>викторина</h3>
+                </div>
+            </a>
+
+            <a class="game-card" href="#">
+                <div class="game-card__img game-card__img_item6"></div>
+                <div class="game-card__info">
+                    <p class="game-card__number">Игра № 6</p>
+                    <h3 class="game-card__name">Генератор<br>случайных<br>цветов</h3>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="footer center">
+        <p>Все права защищены.</p>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,50 @@
+@mixin title-style {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+}
+
+@mixin text-style {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+@mixin button-style {
+    font: inherit;
+    cursor: pointer;
+    width: 247px;
+    padding: 16px 28px;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    background: #202027;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    color: #fff;
+    transition: background-color 1s ease, color 1s ease;
+
+    &:hover {
+        color: #000;
+        background: #fff;
+    }
+}
+
+@mixin game-card-number-style {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    color: #202027;
+    padding: 8px 16px 10px 16px;
+    border-radius: 52.58px;
+    background: #F7F7F7;
+}
+
+@mixin game-card-name-style {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    color: #202027;
+}

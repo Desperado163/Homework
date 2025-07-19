@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  padding-top: 196px;
+  padding-bottom: 156px;
+  position: relative;
+  background: url(img/big-star.svg) top -333px left 60vw no-repeat, url(img/star2.svg) top 94px left 4.5vw no-repeat, url(img/star3.svg) top 69px left 10.8vw no-repeat, url(img/star4.svg) top 538px left 67.6vw no-repeat, url(img/star5.svg) top 568px left 70.3vw no-repeat, rgb(225, 255, 143);
+  background-attachment: local;
+}
+.header__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  color: #202027;
+}
+.header__text {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #202027;
+}
+.header__text-bold {
+  font-weight: bold;
+}
+.header__button {
+  margin-top: 48px;
+  font: inherit;
+  cursor: pointer;
+  width: 247px;
+  padding: 16px 28px;
+  border: 1px solid #202027;
+  border-radius: 60px;
+  background: #202027;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  color: #fff;
+  transition: background-color 1s ease, color 1s ease;
+}
+.header__button:hover {
+  color: #000;
+  background: #fff;
+}
+
+.scrollbar {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: #BCEC30;
+  background: url(img/scrollbar.jpeg) no-repeat;
+}
+
+.about {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  background: url(img/sec_big_star.svg) top 90px left 67.4vw no-repeat, url(img/sec_med_star.svg) top 822px left 2.8vw no-repeat, url(img/sec_small_star.svg) top 770px left 1.7vw no-repeat, #202027;
+}
+.about__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  color: #fff;
+}
+.about__text {
+  margin-top: 24px;
+  margin-bottom: 72px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #fff;
+}
+.about__content {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.about__content > :nth-child(n+4):nth-child(-n+6) {
+  align-self: end;
+}
+.about__content .game-card {
+  max-width: 378px;
+  overflow: hidden;
+  height: auto;
+  border-radius: 30px;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+.about__content .game-card:hover {
+  transform: scale(1.1);
+}
+.about__content .game-card__img {
+  border-radius: 30px;
+  height: auto;
+  aspect-ratio: 5/4.154;
+}
+.about__content .game-card__img_item1 {
+  background: url(img/guess_the_number_ico.svg) center top 40px no-repeat, url(img/guess_the_number.png) center no-repeat, #AD61FF;
+}
+.about__content .game-card__img_item2 {
+  background: url(img/simple_arithmetic.svg) center no-repeat, #FDAD00;
+}
+.about__content .game-card__img_item3 {
+  background: url(img/flip_the_text.svg) center no-repeat, #565EEF;
+}
+.about__content .game-card__img_item4 {
+  background: url(img/stone-scissors-paper-hend.png) center no-repeat, url(img/stone-scissors-paper-card.svg) center top 24px no-repeat, url(img/stone-scissors-paper.svg) center no-repeat, #271A58;
+}
+.about__content .game-card__img_item5 {
+  background: url(img/simple_quiz_card.svg) center top 25px no-repeat, url(img/simple_quiz.svg) center no-repeat, #99D100;
+}
+.about__content .game-card__img_item6 {
+  background: url(img/random_color.svg) top 50% left 35% no-repeat, #271A58;
+}
+.about__content .game-card__info {
+  padding: 32px 32px 36px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+.about__content .game-card__number {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  color: #202027;
+  padding: 8px 16px 10px 16px;
+  border-radius: 52.58px;
+  background: #F7F7F7;
+}
+.about__content .game-card__name {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  color: #202027;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #BCEC30;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

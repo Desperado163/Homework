@@ -88,5 +88,16 @@ if (isAdmin = true) {
 }
 
 // Задание № 10
-name = String(prompt("Введите ваше имя!"));
+name = String(prompt("Введите ваше имя:"));
 alert (`Привет, ${name}!`)
+
+// Дополнительное задание
+let number = Number(prompt("Введите любое число X:"));
+let productNumber = number * 2;
+alert (`Удвоенное число Х равно: ${productNumber}!`)
+let sumProductNumber = productNumber + 10;
+alert (`Удвоенное число Х увеличеное на 10, равно: ${sumProductNumber}!`)
+let quotientSumProductNumber = sumProductNumber / 2;
+alert (`Удвоенное число Х увеличеное на 10 и разделенное на 2, равно: ${quotientSumProductNumber}!`)
+let differenceQuotientSumProductNumber = quotientSumProductNumber - number;
+alert (`Удвоенное число Х увеличеное на 10 и разделенное на 2 из которого вычтено первоначальное значение Х, равно: ${differenceQuotientSumProductNumber}!`)

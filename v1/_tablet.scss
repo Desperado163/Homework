@@ -1,0 +1,79 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 788px / 2);
+        padding-right: calc(50% - 788px / 2);
+    }
+
+    .about {
+        &__content{
+            align-items: stretch;
+            gap: 32px;
+
+            & > :nth-child(n+4):nth-child(-n+6) {
+            align-self: stretch;
+            }
+        }
+    }
+}
+
+@media (max-width: 833px) {
+    .center {
+        padding-left: calc(50% - 378px / 2);
+        padding-right: calc(50% - 378px / 2);
+    }
+
+    .header {
+        padding-top: 147px;
+        padding-bottom: 131px;
+        align-items: center;
+        text-align: center;
+        background:
+            url(img/mobile_big_star.svg) no-repeat 60vw -90px,
+            url(img/star2.svg) no-repeat 11vw 97px / 35px 35px,
+            url(img/star3.svg) no-repeat 24vw 64px / 21px 21px,
+            url(img/star4.svg) no-repeat 72vw 557px / 18px 18px,
+            url(img/star5.svg) no-repeat 80vw 580px / 39px 41px,
+            rgb(225, 255, 143);
+
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__button {
+            margin-top: 36px;
+            width: 285px;
+            font-size: 16px;
+        }
+    }
+
+    .scrollbar {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        background: url(img/mobile_skrollbar.jpeg) no-repeat;
+    }
+
+    .about {
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

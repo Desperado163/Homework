@@ -29,7 +29,10 @@ li {
 .header {
     padding-top: 196px;
     padding-bottom: 156px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
     background: 
         url(img/big-star.svg) top -333px left 60vw no-repeat,
         url(img/star2.svg) top 94px left 4.5vw no-repeat,
@@ -46,6 +49,7 @@ li {
 
     &__text {
         margin-top: 24px;
+        max-width: 720px;
         @include text-style;
         color: #202027;
 
@@ -201,3 +205,25 @@ li {
     letter-spacing: 0px;
     text-align: center;
 }
+
+@media (min-width: 1025px) and (max-width: 1299px) {
+    .center {
+        padding-left: calc(50% - 788px / 2);
+        padding-right: calc(50% - 788px / 2);
+    }
+
+    .about {
+        &__content{
+            align-items: stretch;
+            gap: 32px;
+
+            & > :nth-child(n+4):nth-child(-n+6) {
+            align-self: stretch;
+            }
+        }
+    }
+}
+
+@import 'tablet';
+
+@import 'mobile';

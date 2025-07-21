@@ -1,4 +1,6 @@
-@import 'vars';
+@use 'vars' as *;
+@use 'tablet' as *;
+@use 'mobile' as *;
 
 * {
     margin: 0;
@@ -155,14 +157,14 @@ li {
                 &_item4 {
                     background:
                     url(img/stone-scissors-paper-hend.png) center no-repeat,
-                    url(img/stone-scissors-paper-card.svg) center top 24px no-repeat,
+                    url(img/stone-scissors-paper-card.svg) center top 28px no-repeat,
                     url(img/stone-scissors-paper.svg) center no-repeat,
                     #271A58;
                 }
 
                 &_item5 {
                     background:
-                    url(img/simple_quiz_card.svg) center top 25px no-repeat,
+                    url(img/simple_quiz_card.svg) center top 28px no-repeat,
                     url(img/simple_quiz.svg) center no-repeat,
                     #99D100;
                 }
@@ -191,6 +193,108 @@ li {
                 @include game-card-name-style;
             }
         } 
+    }
+}
+
+.mini-games {
+    padding-top: 46px;
+    padding-bottom: 144px;
+    background: #202027;;
+
+    &__title {
+        @include title-style;
+        color: #fff;
+    }
+
+    &__content {
+        margin-top: 72px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+    }
+
+    &__card {
+        grid-column: span 12;
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+
+        &:nth-child(2n) {
+            flex-direction: row;
+        }
+
+        &-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 6 / 5;
+
+            &_item1 {
+                background:
+                    url(img/guess_the_number_ico.svg) no-repeat 50% 85% / 70%,
+                    url(img/guess_the_number.png) no-repeat center / 165%,
+                    #AD61FF;
+            }
+
+            &_item2 {
+                background:
+                url(img/simple_arithmetic.svg) no-repeat 40% 45% / 165% ,
+                #FDAD00;
+            }
+
+            &_item3 {
+                background:
+                    url(img/flip_the_text.svg) no-repeat 55% 51% / 190%,
+                    #565EEF;
+            }
+
+            &_item4 {
+                background:
+                    url(img/stone-scissors-paper-hend.png) no-repeat center / 25%, 
+                    url(img/stone-scissors-paper-card.svg) no-repeat 50% 95% / 65%,
+                    url(img/stone-scissors-paper.svg) no-repeat center / 165%,
+                    #271A58;
+            }
+
+            &_item5 {
+                background:
+                    url(img/simple_quiz_card.svg) no-repeat center 95% / 65%,
+                    url(img/simple_quiz.svg) no-repeat center /165%,
+                    #99D100;
+            }
+
+            &_item6 {
+                background:
+                    url(img/random_color.svg) no-repeat 35% 50%/165%,
+                    #271A58;
+            }
+        }
+
+        &-info {
+            padding: 48px;
+            min-width: 600px;
+            background: #fff;
+        }
+
+        &-title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            color: #202027;
+        }
+
+        &-text {
+            padding-top: 24px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #202027;
+        }
+
+        &-button {
+            margin-top: 36px;
+            @include button-style;
+        }
     }
 }
 
@@ -223,7 +327,3 @@ li {
         }
     }
 }
-
-@import 'tablet';
-
-@import 'mobile';

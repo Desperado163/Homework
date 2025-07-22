@@ -105,6 +105,7 @@ function scrollToSection() {
 // alert (`Удвоенное число Х увеличеное на 10 и разделенное на 2 из которого вычтено первоначальное значение Х, равно: ${differenceQuotientSumProductNumber}!`)
 
 //// HomeWork № 3
+
 //alert (`Домашняя работа № 3`);
 
 //// Задание № 1
@@ -159,8 +160,31 @@ function scrollToSection() {
 //         break;
 // }
 
-//// Дополнительные задания
+// Дополнительные задания
 
-//// задание №1
+// задание №1
+// let num = Number(prompt('Введите любое число:'));
 
+// if (isNaN(num) || num === 0) {
+//     alert(`Введено неверное значение!`)
+// } else if (num % 2 === 0) {
+//     alert (`Введено четное число!`)
+// } else {
+//     alert (`Введено нечетное число!`)
+// }
 
+// Задание № 2 и № 3
+// let clientOS = Number(prompt('Введите значение ОС (0 — iOS, 1 — Android):'));
+// let clientDeviceYear = Number(prompt('Введите год выпуска вашего аппарата:'));
+
+// if ((clientOS !== 0 && clientOS !== 1) || isNaN(clientOS) || isNaN(clientDeviceYear)) {
+//     console.log ('Введено неверное значение!')
+// } else {
+//     const osName = clientOS === 0 ? 'iOS' : 'Android';
+//     const appType = clientDeviceYear < 2015 ? 'облегченную версию' : 'версию';
+//     const url = (osName === 'iOS')
+//     ? (appType === 'облегченную версию' ? 'https://skypro.ru/ios-lite' : 'https://skypro.ru/ios')
+//     : (appType === 'облегченную версию' ? 'https://skypro.ru/android-lite' : 'https://skypro.ru/android');
+
+//     console.log(`Установите ${appType} приложения для ${osName} по ссылке: ${url}`);
+// }

@@ -203,7 +203,12 @@ li {
 .mini-games {
     padding-top: 46px;
     padding-bottom: 144px;
-    background: #202027;;
+    background:
+        url(img/sec_med_star.svg) no-repeat 92vw 126px/69px,
+        url(img/sec_small_star.svg) no-repeat 89vw 93px/35px,
+        url(img/green_star.svg) no-repeat 92vw 3366px/69px,
+        url(img/green_star.svg) no-repeat 87vw 3414px/41px,
+        #202027;
 
     &__title {
         @include title-style;

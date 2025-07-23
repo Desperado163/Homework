@@ -1,3 +1,5 @@
+@use 'marquee' as *;
+
 @mixin title-style {
     font-size: 64px;
     font-weight: 700;

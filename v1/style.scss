@@ -1,6 +1,4 @@
 @use 'vars' as *;
-@use 'tablet' as *;
-@use 'mobile' as *;
 
 * {
     margin: 0;
@@ -69,27 +67,6 @@ li {
         @include button-style;
     }
 }
-
-.scrollbar {
-    padding-top: 45px;
-    padding-bottom: 45px;
-    background: #BCEC30;
-    background: url(img/scrollbar.jpeg) no-repeat;
-}
-
-// .breadcrumb {
-//     display: flex;
-//     gap: 51px;
-
-//     &__link {
-//         display: inline-block;
-//         font-size: 30px;
-//         font-weight: 700;
-//         line-height: 110%;
-//         letter-spacing: 4%;
-//         color: #202027;
-//     }
-// }
 
 .about {
     padding-top: 94px;
@@ -336,3 +313,6 @@ li {
         }
     }
 }
+
+@use 'tablet';
+@use 'mobile';

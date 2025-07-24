@@ -10,17 +10,18 @@
     <title>Мои мини-игры</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/main.js" defer></script>
+    <script src="js/hw4.js" defer></script>
 </head>
 
 <body>
-    <section class="header center">
+    <header class="header center">
         <h1 class="header__title">Добро пожаловать<br>на мой сайт мини-игр</h1>
         <p class="header__text">
             Тебе предстоит пройти несколько увлекательных игр.
             Если готов, нажимай <span class="header__text-bold">«Поехали!»</span> и <span class="header__text-bold">приступай</span>.
         </p>
         <button class="header__button" onclick="scrollToSection()">Поехали!</button> 
-    </section>
+    </header>
     
     <div class="marquee">
         <div class="marquee__wrapper" id="marquee">
@@ -113,7 +114,7 @@
         </div>
     </section>
 
-    <section class="mini-games center">
+    <section class="mini-games center" id="mini-games">
         <h2 class="mini-games__title">Мини-игры</h2>
         <div class="mini-games__content">
             <article class="mini-games__card" id="guess_the_number">

@@ -38,15 +38,16 @@ li {
     flex-wrap: nowrap;
     align-items: flex-start;
     background: 
-        url(img/big-star.svg) top -333px left 60vw no-repeat,
-        url(img/star2.svg) top 94px left 4.5vw no-repeat,
-        url(img/star3.svg) top 69px left 10.8vw no-repeat,
-        url(img/star4.svg) top 538px left 67.6vw no-repeat,
-        url(img/star5.svg) top 568px left 70.3vw no-repeat,
+        url(img/big-star.svg) top -333px left 58.5vw no-repeat,
+        url(img/star2.svg) top 94px left 4vw no-repeat,
+        url(img/star3.svg) top 69px left 10vw no-repeat,
+        url(img/star4.svg) top 538px left 65.2vw no-repeat,
+        url(img/star5.svg) top 568px left 70vw no-repeat,
         rgb(225, 255, 143);
     background-attachment: local;
 
     &__title {
+        max-width: 768px;
         @include title-style;
         color: #202027;
     }
@@ -70,7 +71,7 @@ li {
 
 .about {
     padding-top: 94px;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
     background:
     url(img/sec_big_star.svg) top 90px left 67.4vw no-repeat,
     url(img/sec_med_star.svg) top 822px left 2.8vw no-repeat,
@@ -178,7 +179,7 @@ li {
 }
 
 .mini-games {
-    padding-top: 46px;
+    padding-top: 96px;
     padding-bottom: 144px;
     background:
         url(img/sec_med_star.svg) no-repeat 92vw 126px/69px,
@@ -203,6 +204,7 @@ li {
         grid-column: span 12;
         border-radius: 30px;
         overflow: hidden;
+        background: #fff;
         display: flex;
         flex-direction: row-reverse;
 
@@ -211,9 +213,10 @@ li {
         }
 
         &-img {
-            width: 100%;
+            width: 50%;
             height: auto;
             aspect-ratio: 6 / 5;
+            border-radius: 30px;
 
             &_item1 {
                 background:
@@ -224,21 +227,21 @@ li {
 
             &_item2 {
                 background:
-                url(img/simple_arithmetic.svg) no-repeat 40% 45% / 165% ,
+                url(img/simple_arithmetic.svg) no-repeat 29% 52% /152% ,
                 #FDAD00;
             }
 
             &_item3 {
                 background:
-                    url(img/flip_the_text.svg) no-repeat 55% 51% / 190%,
+                    url(img/flip_the_text.svg) no-repeat 54% 53%/191%,
                     #565EEF;
             }
 
             &_item4 {
                 background:
-                    url(img/stone-scissors-paper-hend.png) no-repeat center / 25%, 
-                    url(img/stone-scissors-paper-card.svg) no-repeat 50% 95% / 65%,
-                    url(img/stone-scissors-paper.svg) no-repeat center / 165%,
+                    url(img/stone-scissors-paper-hend.png) no-repeat 50% / 25%, 
+                    url(img/stone-scissors-paper-card.svg) no-repeat 50% 86% / 65%,
+                    url(img/stone-scissors-paper.svg) no-repeat 50% / 165%,
                     #271A58;
             }
 
@@ -251,14 +254,14 @@ li {
 
             &_item6 {
                 background:
-                    url(img/random_color.svg) no-repeat 35% 50%/165%,
+                    url(img/random_color.svg) no-repeat 36% 49%/145%,
                     #271A58;
             }
         }
 
         &-info {
             padding: 48px;
-            min-width: 600px;
+            width: 50%;
             background: #fff;
         }
 
@@ -270,7 +273,7 @@ li {
         }
 
         &-text {
-            padding-top: 24px;
+            margin-top: 24px;
             font-size: 24px;
             font-weight: 400;
             line-height: 32px;
@@ -296,14 +299,16 @@ li {
     text-align: center;
 }
 
-@media (min-width: 1025px) and (max-width: 1299px) {
+@media (min-width: 1025px) and (max-width: 1240px) {
     .center {
-        padding-left: calc(50% - 788px / 2);
-        padding-right: calc(50% - 788px / 2);
+        padding-left: 20px;
+        padding-right: 20px;    
     }
 
     .about {
         &__content{
+            padding-left: calc(50% - 788px / 2);
+            padding-right: calc(50% - 788px / 2);
             align-items: stretch;
             gap: 32px;
 
@@ -312,7 +317,9 @@ li {
             }
         }
     }
+
+    
 }
 
-@use 'tablet';
-@use 'mobile';
+@import 'tablet';
+@import 'mobile';

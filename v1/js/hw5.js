@@ -1,0 +1,1 @@
+console.log('%c Домашняя работа №5.', 'color:red');

@@ -74,4 +74,44 @@ let multiplication = () => {
 
 multiplication ();
 
-console.log('\n%c Задание №6:', 'color:green');
+console.log('\n%c Задание №6:', 'color:green')
+let cube = () => {
+
+    for (;;) {
+        let n = Number(prompt('Введите значение n:'));
+
+        if (isNaN(n)) {
+            alert ('Переданный параметр не является числом!');
+            continue;
+        } else {
+            let result = n ** 3;
+            alert(`Результатом возведения значения n в куб, является: ${result} !`);
+            return result;
+        }
+    }
+}
+
+cube();
+
+console.log('\n%c Задание №7:', 'color:green')
+
+const circle1 = {
+    radius : 100
+}
+
+const circle2 = {
+    radius : 200
+}
+
+let getAreaCircle = (circle) => {
+    return Math.PI * circle.radius ** 2;
+}
+
+let getPerimeter = (circle) => {
+  return 2 * Math.PI * circle.radius;
+}
+
+console.log(`Площадь круга с радиусом ${circle1.radius}: ${getAreaCircle(circle1)}`);
+console.log(`Периметр круга с радиусом ${circle1.radius}: ${getPerimeter(circle1)}`);
+console.log(`Площадь круга с радиусом ${circle2.radius}: ${getAreaCircle(circle2)}`);
+console.log(`Периметр круга с радиусом ${circle2.radius}: ${getPerimeter(circle2)}`);

@@ -1,4 +1,4 @@
-function scrollToSection() {
+const scrollToSection = () => {
     const width = window.innerWidth;
 
     if (width <= 376) {

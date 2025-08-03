@@ -3,15 +3,21 @@ let guessTheNumber = () => {
 
     const rnd = Math.floor(Math.random() * 100) + 1;
 
-    let userNumber;
+    let userInput, userNumber;
     
     for (;;) {
-        userNumber = Number(prompt('👻Введите число от 1 до 100:👻'));
+        userInput = prompt('👻Введите число от 1 до 100:👻');
+
+        if (userInput === null) {
+            break;
+        }
+
+        userNumber = Number(userInput);
 
         if (isNaN(userNumber) || userNumber < 1 || userNumber > 100) {
             alert(`😔Введено неверное значение!😔`);
             continue;
-        }
+        } 
 
         if (userNumber === rnd) {
             alert(`🎉УРА! Вы угадали! Загаданное число: ${rnd}🎉`);

@@ -65,7 +65,6 @@ let simpleArithmetic = () => {
     }
 }
 
-
 let turnTheTextOver = () => {
     alert('🕹️Переверни текст!🕹️');
 
@@ -87,3 +86,52 @@ let turnTheTextOver = () => {
         }
     }
 }
+
+let simpleQuiz = () => {
+        const quiz = [
+        {
+            question: "Какой цвет неба?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    do {
+        alert('🕹️ Простая викторина! 🕹️');
+        let score = 0;
+
+        for (let q of quiz) {
+            let message = `${q.question}\n${q.options.join('\n')}`;
+            let answer = prompt(message);
+
+            if (answer === null) {
+                alert("❌ Викторина прервана!");
+                return;
+            }
+
+            let isNumberCorrect = Number(answer) === q.correctAnswer;
+            let isTextCorrect = answer.trim().toLowerCase() === q.options[q.correctAnswer - 1]
+                .replace(/^\d+\.\s*/, '')
+                .toLowerCase();
+
+            if (isNumberCorrect || isTextCorrect) {
+                alert('✅ Правильно!');
+                score++;
+            } else {
+                alert(`❌ Неправильно! Правильный ответ: ${q.options[q.correctAnswer - 1]}`);
+            }
+        }
+
+        alert(`🏆 Викторина завершена!\nПравильных ответов: ${score} из ${quiz.length}`);
+    } while (confirm('🎮 Хотите сыграть ещё раз?'));
+};

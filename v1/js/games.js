@@ -87,6 +87,63 @@ let turnTheTextOver = () => {
     }
 }
 
+let rockPaperScissors = () => {
+    alert('🕹️ Камень, ножницы, бумага! 🕹️');
+    
+    const choice = ["🗿 Камень","✂️ Ножницы","📄 Бумага"];
+
+    for (;;) {
+        let message = `${choice.join(", ")}.`
+        let userChoice = prompt(`Выберите один из вариантов: ${message}`);
+        let randomRobotChoice = Math.floor(Math.random() * choice.length);
+        
+        if (userChoice === null) {
+            alert("❌ Игра прервана!");
+            break;
+        }
+
+        let isUserChoiceNumberCorrect = Number(userChoice) >= 1 && Number(userChoice) <= choice.length;
+        let normalChoice = choice.map(c => c
+            .replace(/^\d+\.\s*/, "")
+            .replace(/[🗿✂️📄]/g, "")
+            .trim()
+            .toLowerCase()
+        );
+
+        let normalUserChoice = userChoice
+            .trim()
+            .replace(/^\d+\.\s*/, "")
+            .replace(/[🗿✂️📄]/g, "")
+            .toLowerCase();
+
+        let isUserChoiceStringCorrect = normalChoice.includes(normalUserChoice);
+
+        if (!isUserChoiceNumberCorrect && !isUserChoiceStringCorrect) {
+            alert("😖 Введено неверное значение! Попробуй ещё раз... 🤔")
+            continue;
+        }
+
+        let userChoiceValidNumberIndex = Number(userChoice) - 1;
+        let userChoiceValidStringIndex = normalChoice.indexOf(normalUserChoice);
+
+        let userChoiceFinalIndex = userChoiceValidNumberIndex >= 0 ? userChoiceValidNumberIndex : userChoiceValidStringIndex;
+
+        if (userChoiceFinalIndex === randomRobotChoice) {
+            alert("Ничья! 🤖 🤝 🤓\nВаш выбор: ${choice[userChoiceFinalIndex]}, выбор робота: ${choice[randomRobotChoice]} ");
+        } else if (
+            (userChoiceFinalIndex === 0 && randomRobotChoice === 1) ||
+            (userChoiceFinalIndex === 1 && randomRobotChoice === 2) ||
+            (userChoiceFinalIndex === 2 && randomRobotChoice === 0)
+        ) {
+            alert(`🎉 УРА!!! Вы победили! 🤓 🏆\nВаш выбор: ${choice[userChoiceFinalIndex]}, выбор робота: ${choice[randomRobotChoice]}`);
+        } else {
+            alert(`😭 Увы! Вы проиграли! 🤖 🏆\nВаш выбор: ${choice[userChoiceFinalIndex]}, выбор робота: ${choice[randomRobotChoice]}`);
+        }
+
+        if (!confirm('🕹️ Хотите сыграть ещё раз? 🕹️')) break;
+    }    
+}
+
 let simpleQuiz = () => {
         const quiz = [
         {
@@ -133,5 +190,5 @@ let simpleQuiz = () => {
         }
 
         alert(`🏆 Викторина завершена!\nПравильных ответов: ${score} из ${quiz.length}`);
-    } while (confirm('🎮 Хотите сыграть ещё раз?'));
+    } while (confirm('🕹️ Хотите сыграть ещё раз? 🕹️'));
 };

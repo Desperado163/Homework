@@ -33,32 +33,37 @@ console.log(filter(people, isMale));
 
 console.log('\n%c Задание №3:', 'color:lightgreen');
 const timer = (deadline) => {
+    let elapsed = 0;
 
     const interval = setInterval(() => {
-        console.log(new Date().toLocaleDateString(), new Date().toLocaleTimeString());
-    }, 3 * 1000);
+        elapsed += 3
 
-    setTimeout (() => {
-        clearInterval(interval);
-        console.log(`${deadline} секунд прошло!`);
-    }, deadline * 1000);
+        if (elapsed < deadline) {
+            console.log(new Date().toLocaleDateString(), new Date().toLocaleTimeString());
+        }
+
+        if (elapsed === deadline) {
+            clearInterval(interval);
+            console.log(`${deadline} секунд прошло!`);
+        }
+    }, 3 *1000);
 }
 
 timer(30);
 
-setTimeout(() => console.log('\n%c Задание №4:', 'color:lightgreen'), 32 * 1000);
+setTimeout(() => console.log('\n%c Задание №4:', 'color:lightgreen'), 33 * 1000);
 function delayForSecond(callback) {
     setTimeout(() => {
         callback();
-    }, 33 * 1000);
+    }, 1000);
 }
 
-delayForSecond(function () {
+setTimeout(() => delayForSecond(function () {
     console.log('Привет, Глеб!');
-});
+}), 34 * 1000);
 
 
-setTimeout(() => console.log('\n%c Задание №5:', 'color:lightgreen'), 34 * 1000);
+setTimeout(() => console.log('\n%c Задание №5:', 'color:lightgreen'), 36 * 1000);
 function delayForSecond5(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
@@ -70,4 +75,4 @@ function sayHi (name) {
     console.log(`Привет, ${name}!`);
 }
 
-setTimeout(() => delayForSecond5(() => sayHi('Глеб')), 35 * 1000);
+setTimeout(() => delayForSecond5(() => sayHi('Глеб')), 37 * 1000);

@@ -129,7 +129,7 @@ let rockPaperScissors = () => {
         let userChoiceFinalIndex = userChoiceValidNumberIndex >= 0 ? userChoiceValidNumberIndex : userChoiceValidStringIndex;
 
         if (userChoiceFinalIndex === randomRobotChoice) {
-            alert("Ничья! 🤖 🤝 🤓\nВаш выбор: ${choice[userChoiceFinalIndex]}, выбор робота: ${choice[randomRobotChoice]} ");
+            alert(`Ничья! 🤖 🤝 🤓\nВаш выбор: ${choice[userChoiceFinalIndex]}, выбор робота: ${choice[randomRobotChoice]}`);
         } else if (
             (userChoiceFinalIndex === 0 && randomRobotChoice === 1) ||
             (userChoiceFinalIndex === 1 && randomRobotChoice === 2) ||

@@ -1,8 +1,9 @@
 .title {
+    display: block;
     color: tomato;
 }
 
-.hideButton {
+.button {
     font-size: 1.2rem;
     padding: 0.25rem 1.25rem;
     border-radius: 1.5rem;
@@ -13,12 +14,4 @@
 .text{
     width: 50rem;
     font-size: 1.5rem;
-}
-
-.colorChangeButton {
-    font-size: 1.2rem;
-    padding: 0.25rem 1.25rem;
-    border-radius: 1.5rem;
-    cursor: pointer;
-    background-color: cornsilk;
 }

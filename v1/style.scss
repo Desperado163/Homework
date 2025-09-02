@@ -49,14 +49,14 @@ li {
     &__title {
         max-width: 768px;
         @include title-style;
-        color: #202027;
+        color: $color-main;
     }
 
     &__text {
         margin-top: 24px;
         max-width: 720px;
         @include text-style;
-        color: #202027;
+        color: $color-main;
 
         &-bold {
             font-weight: bold;
@@ -75,18 +75,18 @@ li {
     url(img/sec_big_star.svg) top 109px left 67.7vw no-repeat,
     url(img/sec_med_star.svg) top 822px left 2.8vw no-repeat,
     url(img/sec_small_star.svg) top 770px left 1.7vw no-repeat,
-    #202027;
+    $color-main;
 
     &__title {
         @include title-style;
-        color: #fff;
+        color: $color-light;
     }
 
     &__text {
         margin-top: 24px;
         margin-bottom: 72px;
         @include text-style;
-        color: #fff;
+        color: $color-light;
     }
 
     &__content {
@@ -104,7 +104,7 @@ li {
             overflow: hidden;
             height: auto;
             border-radius: 30px;
-            background: #fff;
+            background: $color-light;
             transition: transform 0.3s ease;
 
             &:hover {
@@ -185,11 +185,11 @@ li {
         url(img/sec_small_star.svg) no-repeat 88.5vw 146px/35px,
         url(img/green_star.svg) no-repeat 91vw 3417px/69px,
         url(img/green_star.svg) no-repeat 86.5vw 3465px/41px,
-        #202027;
+        $color-main;
 
     &__title {
         @include title-style;
-        color: #fff;
+        color: $color-light;
     }
 
     &__content {
@@ -203,7 +203,7 @@ li {
         grid-column: span 12;
         border-radius: 30px;
         overflow: hidden;
-        background: #fff;
+        background: $color-light;
         display: flex;
         flex-direction: row-reverse;
 
@@ -261,14 +261,14 @@ li {
         &-info {
             padding: 48px;
             width: 50%;
-            background: #fff;
+            background: $color-light;
         }
 
         &-title {
             font-size: 48px;
             font-weight: 700;
             line-height: 59px;
-            color: #202027;
+            color: $color-main;
         }
 
         &-text {
@@ -276,7 +276,7 @@ li {
             font-size: 24px;
             font-weight: 400;
             line-height: 32px;
-            color: #202027;
+            color: $color-main;
         }
 
         &-button {
@@ -290,7 +290,7 @@ li {
     padding-top: 60px;
     padding-bottom: 60px;
     background: #BCEC30;
-    color: #000;
+    color: $color-main;
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
@@ -303,7 +303,7 @@ li {
     top: 20%;
     left: calc(50vw - 50% / 2);
     border-radius: 0px 50px / 0px 50px;
-    border: 4px solid white;
+    border: 4px solid $color-light;
 
     &::backdrop {
         background-color: rgba(0, 0, 0, 0.8);
@@ -322,7 +322,7 @@ li {
         position: fixed;
         top: 15%;
         left: 75%;
-        border: 4px solid white;
+        border: 4px solid $color-light;
         border-radius: 50%;
         cursor: pointer;
         background: red;
@@ -332,7 +332,7 @@ li {
         &::after {
             content: "";
             position: absolute;
-            background: white;
+            background: $color-light;
             width: 80%;
             height: 12%;
             top: 50%;
@@ -367,6 +367,6 @@ li {
 
     
 }
-
+@import 'marquee';
 @import 'tablet';
 @import 'mobile';

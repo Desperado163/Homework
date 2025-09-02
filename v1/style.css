@@ -1,56 +1,3 @@
-.marquee {
-  padding: 27px 0px;
-  overflow: hidden;
-  display: flex;
-  background: #BCEC30;
-}
-.marquee__wrapper {
-  display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-  animation: marquee 20s linear infinite;
-}
-.marquee__content {
-  padding-left: 49px;
-  display: flex;
-  align-items: center;
-  gap: 51px;
-  flex-shrink: 0;
-}
-.marquee__text {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 110%;
-  letter-spacing: 4%;
-  color: #202027;
-  white-space: nowrap;
-  text-transform: uppercase;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-@media (max-width: 833px) {
-  .marquee {
-    padding: 18px 0px;
-  }
-  .marquee__content {
-    padding-left: 20px;
-    gap: 20px;
-  }
-  .marquee__text {
-    font-size: 16px;
-  }
-  .marquee__svg-star {
-    width: 20px;
-    height: 20px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -97,7 +44,7 @@ li {
   font-weight: 700;
   line-height: 78px;
   letter-spacing: 0px;
-  color: #202027;
+  color: rgb(32, 32, 39);
 }
 .header__text {
   margin-top: 24px;
@@ -106,7 +53,7 @@ li {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0px;
-  color: #202027;
+  color: rgb(32, 32, 39);
 }
 .header__text-bold {
   font-weight: bold;
@@ -120,30 +67,30 @@ li {
   cursor: pointer;
   width: 247px;
   padding: 15px 28px;
-  border: 1px solid #202027;
+  border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
-  background: #202027;
+  background: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
-  color: #fff;
+  color: #FFF;
   transition: background-color 1s ease, color 1s ease;
 }
 .header__button:hover {
-  color: #000;
-  background: #fff;
+  color: rgb(32, 32, 39);
+  background: #FFF;
 }
 
 .about {
   padding-top: 94px;
-  background: url(img/sec_big_star.svg) top 109px left 67.7vw no-repeat, url(img/sec_med_star.svg) top 822px left 2.8vw no-repeat, url(img/sec_small_star.svg) top 770px left 1.7vw no-repeat, #202027;
+  background: url(img/sec_big_star.svg) top 109px left 67.7vw no-repeat, url(img/sec_med_star.svg) top 822px left 2.8vw no-repeat, url(img/sec_small_star.svg) top 770px left 1.7vw no-repeat, rgb(32, 32, 39);
 }
 .about__title {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
   letter-spacing: 0px;
-  color: #fff;
+  color: #FFF;
 }
 .about__text {
   margin-top: 24px;
@@ -152,7 +99,7 @@ li {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0px;
-  color: #fff;
+  color: #FFF;
 }
 .about__content {
   display: grid;
@@ -169,7 +116,7 @@ li {
   overflow: hidden;
   height: auto;
   border-radius: 30px;
-  background: #fff;
+  background: #FFF;
   transition: transform 0.3s ease;
 }
 .about__content .game-card:hover {
@@ -210,7 +157,7 @@ li {
   font-size: 16px;
   font-weight: 500;
   line-height: 110%;
-  color: #202027;
+  color: rgb(32, 32, 39);
   padding: 8px 16px 10px 16px;
   border-radius: 52.58px;
   background: #F7F7F7;
@@ -219,20 +166,20 @@ li {
   font-size: 32px;
   font-weight: 700;
   line-height: 39px;
-  color: #202027;
+  color: rgb(32, 32, 39);
 }
 
 .mini-games {
   padding-top: 96px;
   padding-bottom: 144px;
-  background: url(img/sec_med_star.svg) no-repeat 91.5vw 180px/69px, url(img/sec_small_star.svg) no-repeat 88.5vw 146px/35px, url(img/green_star.svg) no-repeat 91vw 3417px/69px, url(img/green_star.svg) no-repeat 86.5vw 3465px/41px, #202027;
+  background: url(img/sec_med_star.svg) no-repeat 91.5vw 180px/69px, url(img/sec_small_star.svg) no-repeat 88.5vw 146px/35px, url(img/green_star.svg) no-repeat 91vw 3417px/69px, url(img/green_star.svg) no-repeat 86.5vw 3465px/41px, rgb(32, 32, 39);
 }
 .mini-games__title {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
   letter-spacing: 0px;
-  color: #fff;
+  color: #FFF;
 }
 .mini-games__content {
   margin-top: 72px;
@@ -244,7 +191,7 @@ li {
   grid-column: span 12;
   border-radius: 30px;
   overflow: hidden;
-  background: #fff;
+  background: #FFF;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -278,20 +225,20 @@ li {
 .mini-games__card-info {
   padding: 48px;
   width: 50%;
-  background: #fff;
+  background: #FFF;
 }
 .mini-games__card-title {
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
-  color: #202027;
+  color: rgb(32, 32, 39);
 }
 .mini-games__card-text {
   margin-top: 24px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #202027;
+  color: rgb(32, 32, 39);
 }
 .mini-games__card-button {
   margin-top: 36px;
@@ -302,25 +249,25 @@ li {
   cursor: pointer;
   width: 247px;
   padding: 15px 28px;
-  border: 1px solid #202027;
+  border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
-  background: #202027;
+  background: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
-  color: #fff;
+  color: #FFF;
   transition: background-color 1s ease, color 1s ease;
 }
 .mini-games__card-button:hover {
-  color: #000;
-  background: #fff;
+  color: rgb(32, 32, 39);
+  background: #FFF;
 }
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #BCEC30;
-  color: #000;
+  color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -333,7 +280,7 @@ li {
   top: 20%;
   left: calc(50vw - 25%);
   border-radius: 0px 50px/0px 50px;
-  border: 4px solid white;
+  border: 4px solid #FFF;
 }
 .dialogRandomColorGenerator::backdrop {
   background-color: rgba(0, 0, 0, 0.8);
@@ -349,18 +296,18 @@ li {
   cursor: pointer;
   width: 247px;
   padding: 15px 28px;
-  border: 1px solid #202027;
+  border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
-  background: #202027;
+  background: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
-  color: #fff;
+  color: #FFF;
   transition: background-color 1s ease, color 1s ease;
 }
 .dialogRandomColorGenerator__rndColorBtn:hover {
-  color: #000;
-  background: #fff;
+  color: rgb(32, 32, 39);
+  background: #FFF;
 }
 .dialogRandomColorGenerator__rndColorCloseBtn {
   height: 50px;
@@ -368,7 +315,7 @@ li {
   position: fixed;
   top: 15%;
   left: 75%;
-  border: 4px solid white;
+  border: 4px solid #FFF;
   border-radius: 50%;
   cursor: pointer;
   background: red;
@@ -376,7 +323,7 @@ li {
 .dialogRandomColorGenerator__rndColorCloseBtn::before, .dialogRandomColorGenerator__rndColorCloseBtn::after {
   content: "";
   position: absolute;
-  background: white;
+  background: #FFF;
   width: 80%;
   height: 12%;
   top: 50%;
@@ -400,6 +347,59 @@ li {
   }
   .about__content > :nth-child(n+4):nth-child(-n+6) {
     align-self: stretch;
+  }
+}
+.marquee {
+  padding: 27px 0px;
+  overflow: hidden;
+  display: flex;
+  background: #BCEC30;
+}
+.marquee__wrapper {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: marquee 20s linear infinite;
+}
+.marquee__content {
+  padding-left: 49px;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  flex-shrink: 0;
+}
+.marquee__text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  color: rgb(32, 32, 39);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 833px) {
+  .marquee {
+    padding: 18px 0px;
+  }
+  .marquee__content {
+    padding-left: 20px;
+    gap: 20px;
+  }
+  .marquee__text {
+    font-size: 16px;
+  }
+  .marquee__svg-star {
+    width: 20px;
+    height: 20px;
   }
 }
 @media (max-width: 1024px) {
@@ -520,7 +520,7 @@ li {
     display: none;
   }
   .mini-games {
-    background: #202027;
+    background: rgb(32, 32, 39);
   }
   .dialogRandomColorGenerator {
     top: 10%;
@@ -532,7 +532,7 @@ li {
     height: 35px;
     width: 35px;
     left: 85%;
-    border: 3px solid white;
+    border: 3px solid #FFF;
   }
   .dialogRandomColorGenerator__rndColorBtn {
     font-size: 16px;

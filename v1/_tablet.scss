@@ -41,6 +41,15 @@
             }
         }
     }
+
+    .dialogRandomColorGenerator {
+        width: 70%;
+        left: calc(50vw - 70% / 2);
+        
+        &__rndColorCloseBtn {
+            left: 85%;
+        }
+    }
 }
 
 

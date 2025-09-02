@@ -192,3 +192,30 @@ let simpleQuiz = () => {
         alert(`🏆 Викторина завершена!\nПравильных ответов: ${score} из ${quiz.length}`);
     } while (confirm('🕹️ Хотите сыграть ещё раз? 🕹️'));
 };
+
+const randomColorGenerator = () => {
+    const dialogRandomColorGeneratorEl = document.querySelector('.dialogRandomColorGenerator');
+    const rndColorBtnEl = document.querySelector('.dialogRandomColorGenerator__rndColorBtn');
+    const rndColorCloseBtnEl = document.querySelector('.dialogRandomColorGenerator__rndColorCloseBtn');
+    
+    console.log(dialogRandomColorGeneratorEl,
+                rndColorBtnEl,
+                rndColorCloseBtnEl);
+
+    dialogRandomColorGeneratorEl.showModal();
+
+    rndColorBtnEl.addEventListener('click', () => {
+        let redCanal = Math.floor(Math.random() * 256);
+        let greenCanal = Math.floor(Math.random() * 256);
+        let blueCanal = Math.floor(Math.random() * 256);
+        
+        console.log(`R: ${redCanal} G: ${greenCanal} B: ${blueCanal}`);
+        
+        dialogRandomColorGeneratorEl.style.background = `rgb(${redCanal}, ${greenCanal}, ${blueCanal})`;
+        rndColorBtnEl.style.background = `rgb(${blueCanal}, ${redCanal}, ${greenCanal})`;
+    });
+
+    rndColorCloseBtnEl.addEventListener('click', () => {
+        dialogRandomColorGeneratorEl.close();
+    })
+}
